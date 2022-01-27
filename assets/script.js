@@ -21,4 +21,4 @@ function getApi() {
         console.log(listItem);
     });
 }
-submitBtn.addEventListener('click', getApi);
+newJoke.addEventListener('click', getApi);
