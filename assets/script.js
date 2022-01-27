@@ -1,5 +1,4 @@
 
-
 var showJoke = document.getElementById("dadJoke");
 
 function getApi() {
@@ -19,9 +18,9 @@ function getApi() {
         // Use the console to examine the response
         console.log(data);
 
-        var listItem = document.createElement('h3');
-        listItem.textContent = data;
-        showJoke.appendChild(listItem);
+    //     var listItem = document.createElement('h3');
+    //     listItem.textContent = data;
+    //     showJoke.appendChild(listItem);
     });
 }
 submitBtn.addEventListener('click', getApi);
