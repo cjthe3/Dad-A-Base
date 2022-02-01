@@ -3,11 +3,13 @@
 body { 
   background-color: black;
   min-height: 100%;
+  Position: absolute; 
+  min-width: 100%
 }
 #main { 
   background-color: black;
 }
  .footer {
     background-color: black;
-  min-height: max-content;}
+  }
     
