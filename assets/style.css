@@ -3,13 +3,23 @@
 body { 
   background-color: black;
   min-height: 100%;
+<<<<<<< HEAD
+  Position: absolute; 
+  min-width: 100%
+=======
   min-width: 100%;
   position: absolute;
+>>>>>>> ba81f9e2ccdd3029c620c1a4e8c72d754eda04c7
 }
 #main { 
   background-color: black;
 }
 .footer {
     background-color: black;
+<<<<<<< HEAD
+  }
+    
+=======
   min-height: max-content;
 }
+>>>>>>> ba81f9e2ccdd3029c620c1a4e8c72d754eda04c7
