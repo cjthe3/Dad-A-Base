@@ -17,7 +17,7 @@ Along with Api's like<Bulma> and <Dad joke generator>
 
 Thanks to the following people who have contributed to this project:
 
-* [@jwputah](https://github.com/jwputah 📖
+* [@jwputah](https://github.com/jwputah) 📖
 * [@Ashley L Lcokhart](https://github.com/Glitterbones) 🐛
 * [@krushtons](https://github.com/Krushtons) 🐛
 * [@cjthe3](https://github.com/cjthe3) 🐛
