@@ -2,7 +2,7 @@
 
 ## Visiting Dad-A-Base
 
-'link to wesbite
+https://cjthe3.github.io/Dad-A-Base/
 
 ## Why we made Dad-A-Base
 
