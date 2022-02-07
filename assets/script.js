@@ -1,6 +1,3 @@
-
-
-
 function getApi() {
     fetch("https://icanhazdadjoke.com/", {
         headers: {
@@ -18,7 +15,25 @@ function getApi() {
             console.log(listItem);
         })
 }
+
+function getChuckApi() {
+    fetch("https://api.chucknorris.io/jokes/random")
+    
+
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+
+            var listItem = JSON.stringify(data);
+            listItem = document.getElementById("dadJoke").innerHTML = data.value;
+            console.log(listItem);
+        })
+    }
+
 newJoke.addEventListener("click", getApi);
+chuckJoke.addEventListener("click", getChuckApi);
 var favoriteBtn = document.getElementById("favejoke");
 favoriteBtn.addEventListener("click", saveFavorite);
 
@@ -65,3 +80,4 @@ function initializeFavorites() {
     }
 }
 initializeFavorites();
+
