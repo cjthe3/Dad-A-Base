@@ -17,9 +17,11 @@ function getApi() {
 }
 
 function getChuckApi() {
-    fetch("https://api.chucknorris.io/jokes/random")
-    
-
+    fetch("http://api.icndb.com/jokes/random?limitTo=[nerdy] ", {
+        headers: {
+            Accept: "application/json",
+        }
+    })
         .then(function (response) {
             return response.json();
         })
@@ -27,7 +29,7 @@ function getChuckApi() {
             console.log(data);
 
             var listItem = JSON.stringify(data);
-            listItem = document.getElementById("dadJoke").innerHTML = data.value;
+            listItem = document.getElementById("dadJoke").innerHTML = data.value.joke;
             console.log(listItem);
         })
     }
