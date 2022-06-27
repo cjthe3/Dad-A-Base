@@ -4,7 +4,8 @@ body {
   background-color: black;
   min-height: 100%;
   Position: absolute; 
-  min-width: 100%
+  min-width: 100%;
+  padding: 20px;
 }
 #main { 
   background-color: black;

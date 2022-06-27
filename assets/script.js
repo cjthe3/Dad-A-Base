@@ -16,26 +16,29 @@ function getApi() {
         })
 }
 
-function getChuckApi() {
-    fetch("http://api.icndb.com/jokes/random?limitTo=[nerdy] ", {
-        headers: {
-            Accept: "application/json",
-        }
-    })
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
+// function getChuckApi() {
+//     fetch("https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random", {
+//         headers: {
+//             accept: 'application/json',
+//             'X-RapidAPI-Key': 'bf92c9263fmsh9b5ba3341c5c1abp151886jsn998a30f334a8',
+//             'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
+//         }
+//     })
+    
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (data) {
+//             console.log(data);
 
-            var listItem = JSON.stringify(data);
-            listItem = document.getElementById("dadJoke").innerHTML = data.value.joke;
-            console.log(listItem);
-        })
-    }
+//             var listItem = JSON.stringify(data);
+//             listItem = document.getElementById("dadJoke").innerHTML = data.value;
+//             console.log(listItem);
+//         })
+//     }
 
 newJoke.addEventListener("click", getApi);
-chuckJoke.addEventListener("click", getChuckApi);
+// chuckJoke.addEventListener("click", getChuckApi);
 var favoriteBtn = document.getElementById("favejoke");
 favoriteBtn.addEventListener("click", saveFavorite);
 
